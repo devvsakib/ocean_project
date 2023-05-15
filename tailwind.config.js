@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        tertiary: 'var(--tertiary-color)'
       },
       backgroundColor: {
         primary: 'var(--background-color)'

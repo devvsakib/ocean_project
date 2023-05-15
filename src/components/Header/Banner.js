@@ -24,7 +24,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="lg:flex lg:gap-2 justify-between my-20">
-        <p className="font-thin text-2xl lg:w-1/2">Our vision is to promote sustainable scalable solutions and a balanced approach to</p>
+        <p className="font-thin text-2xl lg:w-1/2">Our vision is to promote sustainable scalable solutions and a balanced approach to <span className="text-tertiary font-semibold">Planet</span></p>
         <div className="capitalize grid grid-cols-1 md:grid-cols-2 justify-between flex-1 gap-y-10 mt-10 md:mt-10 lg:mt-0">
           {
             data.map((item, idx) => (

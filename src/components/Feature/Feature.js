@@ -21,7 +21,7 @@ const Feature = () => {
                 }
             </div>
             <div className="p-10 rounded-lg overflow-hidden order-1">
-                <p className="mt-5 text-4xl font-thin">What we are <span className="font-semibold">TRYING</span> to solve</p>
+                <p className="mt-5 text-4xl font-thin">What we are <span className="text-tertiary font-semibold">TRYING</span> to solve</p>
             </div>
         </div >
     )
