@@ -1,12 +1,11 @@
 import Feature from '@/components/Feature/Feature'
-import Sponsore from '@/components/Sponsore/Sponsore'
-import React from 'react'
+import Partners from '@/components/Partners/Partners'
 
 const Home = () => {
   return (
     <div>
       <Feature />
-      <Sponsore />
+      <Partners />
     </div>
   )
 }
