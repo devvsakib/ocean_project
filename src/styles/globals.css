@@ -7,8 +7,22 @@
   --gradient-primary: linear-gradient(92.41deg, #FFA500 0%, #FF5C3D 100%);
   --gradient-card: linear-gradient(180deg, rgba(1, 21, 45, 0) 0%, #01152D 100%);
 }
-body{
+
+body {
   color: white;
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+}
+
+.rotateImage {
+  animation: rotateMe 20s infinite  forwards linear;
+}
+
+@keyframes rotateMe {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
