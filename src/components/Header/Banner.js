@@ -1,12 +1,16 @@
-import Button from "../Common/Button"
+import { useEffect, useState } from "react";
+import Button from "../Common/Button";
 
 const Banner = () => {
+  const [typed, setTyped] = useState("Planet")
   const data = [
     { numbers: "2.5B", desc: "Solid waste" },
     { numbers: "275M", desc: "Plastic waste" },
     { numbers: "700+", desc: "Species might extinct" },
     { numbers: "1500%", desc: "Increased polution" }
   ]
+
+
   return (
     <div className="h-auto grid items-center gap-2">
       <div className="relative flex flex-col gap-5 mt-36">
@@ -24,7 +28,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="lg:flex lg:gap-2 justify-between my-20">
-        <p className="font-thin text-2xl lg:w-1/2">Our vision is to promote sustainable scalable solutions and a balanced approach to <span className="text-tertiary font-semibold">Planet</span></p>
+        <p className="font-thin text-2xl lg:w-1/2">Our vision is to promote sustainable scalable solutions and a balanced approach to <span id="typing" className="text-tertiary font-semibold">{typed}</span></p>
         <div className="capitalize grid grid-cols-1 md:grid-cols-2 justify-between flex-1 gap-y-10 mt-10 md:mt-10 lg:mt-0">
           {
             data.map((item, idx) => (
