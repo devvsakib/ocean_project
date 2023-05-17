@@ -9,14 +9,16 @@ const Partners = () => {
   ]
   return (
 
-    <div className='my-36'>
-      <div className='text-center text-transparent bg-gradient-to-t from-black/40 to-white bg-clip-text'>
-        <h1 className='border-b-2 border-[#FFA500] text-7xl pb-3 font-semibold uppercase inline-block'>Our Partners</h1>
+    <div className='mb-36 -mt-5'>
+      <div className='text-center  bg-gradient-to-t from-[#061C35] opacity-30 to-white bg-clip-text text-transparent'>
+        <h1 className='text-[9rem] font-black  uppercase inline-block'>Our Partners</h1>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 place-items-center items-center my-14 justify-between'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10  mb-14 -mt-10 gap-x-20'>
         {
           sponsoreLogo.map((sponsore, idx) => (
-            <img key={idx} src={sponsore.logo} alt={sponsore.brand} />
+            <div className='border-r-2 partners border-white/30'>
+              <img key={idx} src={sponsore.logo} alt={sponsore.brand} />
+            </div>
           ))
         }
       </div>

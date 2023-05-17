@@ -8,9 +8,9 @@ const Header = () => {
       <Navbar />
       <Banner />
       
-      <div className='absolute min-w-full h-[100vh]  lg:min-w-auto -z-10 top-0 right-0'>
-        <div className='bg-gradient-to-t from-[#061C35] absolute w-full h-[100vh]'></div>
-        <img src="/images/banner.png" className='object-cover object-center h-[100vh] lg:h-full w-full lg:w-auto lg:ml-auto' />
+      <div className='absolute min-w-full min-h-screen  lg:min-w-auto -z-10 top-0 right-0'>
+        <div className='bg-gradient-to-t from-[#061C35] absolute h-screen'></div>
+        <img src="/images/banner.png" className='object-cover object-center h-full w-full lg:w-auto lg:ml-auto' />
       </div>
     </header>
   )
