@@ -33,3 +33,7 @@ body {
 .partners:last-child{
   border: none;
 }
+
+.sliderShadow {
+  box-shadow: -80px 0px 150px #04101F;
+}

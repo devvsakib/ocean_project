@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Button = ({content}) => {
+const Button = ({ content, rounded }) => {
   return (
-    <button className='bg-gradient-to-r from-[#FFA500] to-[#FF5C3D] transition-all duration-150 ease-linear px-6 py-2 rounded-full z-10'>{content}</button>
+    <button className={`bg-gradient-to-r from-[#FFA500] to-[#FF5C3D] transition-all duration-150 ease-linear ${rounded ? "w-12 h-12 grid place-content-center" : "px-6 py-2"} rounded-full z-10`}>{content}</button>
   )
 }
 
