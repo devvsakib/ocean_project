@@ -16,8 +16,8 @@ const Partners = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10  mb-14 -mt-10 gap-x-20'>
         {
           sponsoreLogo.map((sponsore, idx) => (
-            <div className='border-r-2 partners border-white/30'>
-              <img key={idx} src={sponsore.logo} alt={sponsore.brand} />
+            <div key={idx} className='border-r-2 partners border-white/30'>
+              <img src={sponsore.logo} alt={sponsore.brand} />
             </div>
           ))
         }

@@ -39,10 +39,10 @@ const Slider = () => {
             <div className='grid lg:grid-cols-2 items-start gap-10 justify-center'>
                 <div className=''>
                     <img className='absolute lg:relative right-0 -z-10' src="/images/fish.png" />
-                    <div className='flex items-center justify-center mt-5 gap-6'>
+                    <div className='flex items-center justify-center mt-10 gap-6'>
                         {
                             sliderData.map(slider => (
-                                <button className='flex items-center justify-center' onClick={() => setActiveSliderNumber(slider.id)}>
+                                <button key={slider.id} className='flex items-center justify-center' onClick={() => setActiveSliderNumber(slider.id)}>
                                     <img className={`${activeSlider && activeSliderNumber === slider.id ? "absolute" : "hidden"}`} src='/images/activeSlider.png' />
                                     <img src='/images/sliderBtn.png' />
                                 </button>
