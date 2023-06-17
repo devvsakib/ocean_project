@@ -11,7 +11,7 @@ const Partners = () => {
 
     <div className='mb-36 -mt-5'>
       <div className='text-center  bg-gradient-to-t from-[#061C35] opacity-30 to-white bg-clip-text text-transparent'>
-        <h1 className='text-[9rem] font-black  uppercase inline-block'>Our Partners</h1>
+        <h1 className='text-2rem lg:text-[9rem] font-black  uppercase lg:inline-block'>Our Partners</h1>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10  mb-14 -mt-10 gap-x-20'>
         {
