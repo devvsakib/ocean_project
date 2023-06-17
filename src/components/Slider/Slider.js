@@ -46,16 +46,6 @@ const Slider = () => {
         console.log(swpr);
     };
 
-    const handleNextSlider = () => {
-        const nextSlider = activeSlider === sliderData.length - 1 ? 0 : activeSlider + 1;
-        setActiveSlider(nextSlider);
-    };
-
-    const handlePreviousSlider = () => {
-        const previousSlider = activeSlider === 0 ? sliderData.length - 1 : activeSlider - 1;
-        setActiveSlider(previousSlider);
-    };
-
     return (
         <div className='my-32'>
             <div className='grid lg:grid-cols-2 items-start gap-10 justify-center'>
@@ -93,7 +83,6 @@ const Slider = () => {
                         </div>
                     </div>
                     <div className='order-1 flex gap-10 mt-20 lg:-ml-32 rounded-3xl slider overflow-hidden'>
-
                         <Swiper
                             slidesPerView={1}
                             spaceBetween={30}
@@ -102,7 +91,7 @@ const Slider = () => {
                                 nextEl: '.swiper-button-next',
                                 prevEl: '.swiper-button-prev'
                             }}
-                            modules={[ Navigation]}
+                            modules={[Navigation]}
                             className="mySwiper"
                             onSlideChange={(swiper) => handleSliderChange(swiper)}
                         >
@@ -119,6 +108,11 @@ const Slider = () => {
 
                     </div>
                 </div>
+            </div>
+            <div className='relative bg-gradient-to-r from-[#FFA500] to-[#FF5C3D] py-10 rounded-[20px] px-5 md:px-10 mt-32 grid grid-cols-3 bg-cover md:bg-contain bg-no-repeat bg-center items-center'>
+                <img className='absolute w-full h-full object-cover' src="/images/shapes.png" />
+                <p className='text-xl md:text-3xl font-bold col-span-2'>The Oceans & Us initiative has <br /> collaborated with renowned NFT artists <br /> to produce their own NFT series</p>
+                <img className='absolute right-0 bottom-0 md:-bottom-8 w-2/4' src="/images/tortoise.png" alt="Tortoise PNG" />
             </div>
         </div>
     );
