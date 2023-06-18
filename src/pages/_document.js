@@ -6,7 +6,8 @@ export default function Document() {
     return (
         <Html lang="en">
             <Head>
-                <title>Ocean</title>
+                <title>Ocean & Us</title>
+                <link rel="shortcut icon" href="/images/Heading.png" type="image/x-icon" />
             </Head>
             <body className="max-w-[1300px] min-h-screen flex flex-col justify-between mx-auto bg-primary px-5 md:px-10">
                 <Header />
